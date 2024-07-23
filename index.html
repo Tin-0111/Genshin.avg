@@ -8,14 +8,49 @@
 </head>
 <body>
     <div class="button-container">
-        <button class="photo-button green-border" onclick="showImage('9DX0HRST7Dj9iHqkrOcocQs3RMTd6ISEgmh29Ri_8C6CN-Jq2AdUOeZH95tFnQNKVqmttif5FVnUTR4TCJrV3YVGkCVwr2JKfYgQ5yli_bBF7bw2rSl-ZrLEQUO-JSFXaq5DfButds8r3TrqlUFkaQ.webp')">
-            <img src="9DX0HRST7Dj9iHqkrOcocQs3RMTd6ISEgmh29Ri_8C6CN-Jq2AdUOeZH95tFnQNKVqmttif5FVnUTR4TCJrV3YVGkCVwr2JKfYgQ5yli_bBF7bw2rSl-ZrLEQUO-JSFXaq5DfButds8r3TrqlUFkaQ.webp" alt="Thumbnail 1">
-        </button>
-        <button class="photo-button red-border" onclick="showImage('image2.jpg')">
-            <img src="thumbnail2.jpg" alt="Thumbnail 2">
-        </button>
-        <!-- 필요한 만큼 버튼 추가 -->
+        <!-- 빨간색 테두리 버튼 15개 -->
+        <!-- image1.jpg~image15.jpg -->
+        <!-- thumbnail1.jpg~thumbnail15.jpg -->
+        <button class="photo-button red-border" onclick="showImage('images/image1.jpg')"><img src="images/thumbnail1.jpg" alt="Thumbnail 1"></button>
+        <!-- ...추가적인 빨간색 버튼들... -->
+
+        <!-- 파란색 테두리 버튼 13개 -->
+        <!-- image16.jpg~image28.jpg -->
+        <!-- thumbnail16.jpg~thumbnail28.jpg -->
+        <button class="photo-button blue-border" onclick="showImage('images/image16.jpg')"><img src="images/thumbnail16.jpg" alt="Thumbnail 16"></button>
+        <!-- ...추가적인 파란색 버튼들... -->
+
+        <!-- 연초록색 테두리 버튼 11개 -->
+        <!-- image29.jpg~image39.jpg -->
+        <!-- thumbnail29.jpg~thumbnail39.jpg -->
+        <button class="photo-button light-green-border" onclick="showImage('images/image29.jpg')"><img src="images/thumbnail29.jpg" alt="Thumbnail 29"></button>
+        <!-- ...추가적인 연초록색 버튼들... -->
+
+        <!-- 보라색 테두리 버튼 13개 -->
+        <!-- image40.jpg~image52.jpg -->
+        <!-- thumbnail40.jpg~thumbnail52.jpg -->
+        <button class="photo-button purple-border" onclick="showImage('images/image40.jpg')"><img src="images/thumbnail40.jpg" alt="Thumbnail 40"></button>
+        <!-- ...추가적인 보라색 버튼들... -->
+
+        <!-- 초록색 테두리 버튼 10개 -->
+        <!-- image53.jpg~image62.jpg -->
+        <!-- thumbnail53.jpg~thumbnail62.jpg -->
+        <button class="photo-button green-border" onclick="showImage('images/image53.jpg')"><img src="images/thumbnail53.jpg" alt="Thumbnail 53"></button>
+        <!-- ...추가적인 초록색 버튼들... -->
+
+        <!-- 하늘색 테두리 버튼 15개 -->
+        <!-- image63.jpg~image77.jpg -->
+        <!-- thumbnail63.jpg~thumbnail77.jpg -->
+        <button class="photo-button sky-blue-border" onclick="showImage('images/image63.jpg')"><img src="images/thumbnail63.jpg" alt="Thumbnail 63"></button>
+        <!-- ...추가적인 하늘색 버튼들... -->
+
+        <!-- 연갈색 테두리 버튼 10개 -->
+        <!-- image78.jpg~image87.jpg -->
+        <!-- thumbnail78.jpg~thumbnail87.jpg -->
+        <button class="photo-button light-brown-border" onclick="showImage('images/image78.jpg')"><img src="images/thumbnail78.jpg" alt="Thumbnail 78"></button>
+        <!-- ...추가적인 연갈색 버튼들... -->
     </div>
+
     <div id="image-display" class="image-display">
         <img id="displayed-image" src="" alt="Displayed Image">
     </div>
