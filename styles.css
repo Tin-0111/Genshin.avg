@@ -7,8 +7,10 @@ body {
 
 .button-container {
     display: flex;
+    flex-wrap: wrap; /* 버튼이 여러 줄로 감싸질 수 있게 함 */
     gap: 10px;
     margin-top: 20px;
+    justify-content: center; /* 버튼들을 가운데 정렬 */
 }
 
 .photo-button {
@@ -28,8 +30,28 @@ body {
     border: 2px solid red;
 }
 
+.blue-border {
+    border: 2px solid blue;
+}
+
+.light-green-border {
+    border: 2px solid lightgreen;
+}
+
+.purple-border {
+    border: 2px solid purple;
+}
+
 .green-border {
     border: 2px solid green;
+}
+
+.sky-blue-border {
+    border: 2px solid skyblue;
+}
+
+.light-brown-border {
+    border: 2px solid lightbrown;
 }
 
 .image-display {
