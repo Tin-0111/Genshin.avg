@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.photo-button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.photo-button img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.red-border {
+    border: 2px solid red;
+}
+
+.green-border {
+    border: 2px solid green;
+}
+
+.image-display {
+    margin-top: 20px;
+    display: none; /* 초기에는 보이지 않음 */
+}
+
+.image-display img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
