@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-container">
+        <button class="photo-button red-border" onclick="showImage('image1.jpg')">
+            <img src="thumbnail1.jpg" alt="Thumbnail 1">
+        </button>
+        <button class="photo-button green-border" onclick="showImage('image2.jpg')">
+            <img src="thumbnail2.jpg" alt="Thumbnail 2">
+        </button>
+        <!-- 필요한 만큼 버튼 추가 -->
+    </div>
+    <div id="image-display" class="image-display">
+        <img id="displayed-image" src="" alt="Displayed Image">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
