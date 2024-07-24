@@ -18,7 +18,7 @@ body {
 }
 
 .welcome-message h1 {
-    font-size: 3em; /* 글씨 크기 증가 */
+    font-size: 4em; /* 글씨 크기 증가 */
     font-family: 'Nunito', sans-serif; /* 예쁜 둥글둥글한 글씨체 */
     line-height: 1.5;
     opacity: 0;
@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-wrap: wrap; /* 버튼이 여러 줄로 감싸질 수 있게 함 */
     gap: 10px;
-    margin-top: 100px; /* 더 큰 여백 추가 */
+    margin-top: 200px; /* 더 큰 여백 추가 */
     justify-content: center; /* 버튼들을 가운데 정렬 */
 }
 
