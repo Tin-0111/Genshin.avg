@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nanum+Gothic&display=swap');
 
 body {
-    background-color: #404040; /* 배경색 변경 */
+    background-color: #0d1b2a; /* 배경색 변경 */
+    background-image: url('bg.jpg'); /* 배경 이미지 추가 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
     color: white;
     margin: 0;
+    opacity: 0.5; /* 투명도 적용 */
 }
 
 .welcome-message {
