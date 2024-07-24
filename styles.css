@@ -20,7 +20,8 @@ body {
 .welcome-message h1 {
     font-size: 4em; /* 글씨 크기 증가 */
     font-family: 'Nunito', sans-serif; /* 예쁜 둥글둥글한 글씨체 */
-    line-height: 1.2; /* 줄 간격 조정 */
+    line-height: 1.1; /* 줄 간격 조정 */
+    margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
