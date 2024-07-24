@@ -85,4 +85,28 @@ body {
 }
 
 .purple-border {
-    border: 2px
+    border: 2px solid purple;
+}
+
+.green-border {
+    border: 2px solid green;
+}
+
+.sky-blue-border {
+    border: 2px solid skyblue;
+}
+
+.light-brown-border {
+    border: 2px solid lightbrown;
+}
+
+.image-display {
+    margin-top: 20px;
+    display: none; /* 초기에는 보이지 않음 */
+}
+
+.image-display img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
