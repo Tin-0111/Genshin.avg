@@ -8,44 +8,35 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nanum+Gothic&display=swap">
 </head>
 <body>
+    <div class="welcome-message">
+        <h1 class="fade-in">원신 스펙의 기준</h1>
+        <h1 class="fade-in" style="animation-delay: 0.5s;">GenshinAvg에 오신것을 환영합니다.</h1>
+    </div>
+    <div class="main-buttons">
+        <button class="main-button" onclick="alert('메인 버튼을 눌렀습니다.')">메인</button>
+        <button class="main-button" onclick="alert('설정 버튼을 눌렀습니다.')">설정</button>
+        <button class="main-button" onclick="toggleAvgButtons()">avg</button>
+    </div>
     <div class="container">
-        <div class="welcome-message">
-            <h1 class="fade-in">원신 스펙의 기준</h1>
-            <h1 class="fade-in" style="animation-delay: 0.5s;">GenshinAvg에 오신것을 환영합니다.</h1>
-        </div>
-        <div class="main-buttons">
-            <button class="main-button" onclick="alert('메인 버튼을 눌렀습니다.')">메인</button>
-            <button class="main-button" onclick="alert('설정 버튼을 눌렀습니다.')">설정</button>
-            <button class="main-button" onclick="toggleAvgButtons()">avg</button>
-        </div>
-        <div class="button-container" id="buttonContainer" style="display: none;">
+        <div class="button-container" id="buttonContainer">
             <div class="square-section" onclick="alert('첫 번째 구역을 눌렀습니다.')">
-                <img src="images/Klee.jpg" alt="Thumbnail 1">
                 <p>첫 번째 구역</p>
             </div>
             <div class="square-section" onclick="alert('두 번째 구역을 눌렀습니다.')">
-                <img src="images/Klee.jpg" alt="Thumbnail 2">
                 <p>두 번째 구역</p>
             </div>
             <div class="square-section" onclick="alert('세 번째 구역을 눌렀습니다.')">
-                <img src="images/Klee.jpg" alt="Thumbnail 3">
                 <p>세 번째 구역</p>
             </div>
             <div class="square-section" onclick="alert('네 번째 구역을 눌렀습니다.')">
-                <img src="images/Klee.jpg" alt="Thumbnail 4">
                 <p>네 번째 구역</p>
             </div>
             <div class="square-section" onclick="alert('다섯 번째 구역을 눌렀습니다.')">
-                <img src="images/Klee.jpg" alt="Thumbnail 5">
                 <p>다섯 번째 구역</p>
             </div>
             <div class="square-section" onclick="alert('여섯 번째 구역을 눌렀습니다.')">
-                <img src="images/Klee.jpg" alt="Thumbnail 6">
                 <p>여섯 번째 구역</p>
             </div>
-        </div>
-        <div id="image-display" class="image-display" style="display: none;">
-            <img id="displayed-image" src="" alt="Displayed Image">
         </div>
     </div>
     <script src="scripts.js"></script>
