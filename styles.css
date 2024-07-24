@@ -31,8 +31,9 @@ body {
 }
 
 .main-buttons {
-    margin-top: 20px; /* 메인 버튼들에 상단 마진 추가 */
+    margin-top: 50px; /* 메인 버튼들에 상단 마진 추가 */
     text-align: center;
+    width: 100%;
 }
 
 .main-button {
@@ -51,38 +52,26 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
     width: 100%;
-}
-
-.button-container {
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-    width: 80%;
 }
 
 .square-section {
-    background-color: #2b2b2b; /* 배경보다 약간 연한 색깔 */
-    width: 200px;
-    height: 200px;
+    background-color: #3c3c3c; /* 배경보다 약간 연한 색깔 */
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
     color: white;
     text-align: center;
 }
 
-.square-section:hover {
-    background-color: #3c3c3c;
-}
-
 .square-section p {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin: 0;
 }
 
 @keyframes fadeIn {
