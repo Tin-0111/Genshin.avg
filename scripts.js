@@ -6,10 +6,3 @@ function toggleAvgButtons() {
         buttonContainer.style.display = 'none';
     }
 }
-
-function showImage(imageSrc) {
-    const imageDisplay = document.getElementById('image-display');
-    const displayedImage = document.getElementById('displayed-image');
-    displayedImage.src = imageSrc;
-    imageDisplay.style.display = 'block';
-}
