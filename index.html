@@ -11,7 +11,12 @@
         <h1 class="fade-in">원신 스펙의 기준</h1>
         <h1 class="fade-in" style="animation-delay: 0.5s;">GenshinAvg에 오신것을 환영합니다.</h1>
     </div>
-    <div class="button-container">
+    <div class="main-buttons">
+        <button class="main-button" onclick="showAvgButtons()">메인</button>
+        <button class="main-button" onclick="showAvgButtons()">설정</button>
+        <button class="main-button" onclick="showAvgButtons()">avg</button>
+    </div>
+    <div class="button-container" id="buttonContainer" style="display: none;">
         <button class="photo-button red-border" onclick="showImage('N')"><img src="Image/amber.jpg" alt="Thumbnail 1"></button>
         <button class="photo-button red-border" onclick="showImage('N')"><img src="Image/Xiangling.jpg" alt="Thumbnail 1"></button>
         <button class="photo-button red-border" onclick="showImage('N')"><img src="Image/Bennett.jpg" alt="Thumbnail 1"></button>
