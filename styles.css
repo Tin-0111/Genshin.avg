@@ -13,13 +13,15 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start; /* 왼쪽 정렬 */
     width: 100%;
     max-width: 1200px;
+    padding: 20px;
 }
 
-.header {
-    text-align: center;
-    padding: 20px;
+.welcome-message {
+    width: 100%;
+    text-align: left; /* 왼쪽 정렬 */
 }
 
 .welcome-message h1 {
@@ -46,50 +48,36 @@ body {
     border-radius: 5px;
 }
 
-.main-content {
-    display: flex;
-    width: 100%;
-}
-
-.sidebar {
-    width: 20%;
-    padding: 20px;
-    background-color: #1e1e1e;
-}
-
-.content {
-    width: 60%;
-    padding: 20px;
-}
-
-.right-sidebar {
-    width: 20%;
-    padding: 20px;
-    background-color: #1e1e1e;
-}
-
 .button-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
+    margin-top: 20px;
+    width: 100%;
 }
 
-.photo-button {
-    border: none;
-    padding: 0;
+.square-section {
+    background-color: #1e1e1e;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    outline: none;
+    border-radius: 10px;
 }
 
-.photo-button img {
-    width: 100px;
-    height: 100px;
+.square-section img {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-.red-border {
-    border: 2px solid red;
+.square-section p {
+    margin: 10px 0 0 0;
 }
 
 .image-display {
