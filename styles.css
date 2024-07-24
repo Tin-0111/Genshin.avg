@@ -1,8 +1,23 @@
 body {
+    background-color: navy; /* 배경 색상 */
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
+    color: white; /* 글자 색상 */
+    margin: 0; /* 기본 마진 제거 */
+}
+
+.welcome-message {
+    margin-top: 20px;
+    text-align: left; /* 글씨를 왼쪽 정렬 */
+    width: 100%; /* 전체 너비 사용 */
+    padding-left: 20px; /* 왼쪽 여백 추가 */
+}
+
+.welcome-message h1 {
+    font-size: 2em;
+    line-height: 1.5;
 }
 
 .button-container {
