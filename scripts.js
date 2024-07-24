@@ -1,6 +1,11 @@
 function showImage(imageSrc) {
-    var display = document.getElementById('image-display');
-    var img = document.getElementById('displayed-image');
-    img.src = imageSrc;
-    display.style.display = 'block'; // 이미지를 보이게 함
+    const imageDisplay = document.getElementById('image-display');
+    const displayedImage = document.getElementById('displayed-image');
+    displayedImage.src = imageSrc;
+    imageDisplay.style.display = 'block';
+}
+
+function showAvgButtons() {
+    const buttonContainer = document.getElementById('buttonContainer');
+    buttonContainer.style.display = 'flex';
 }
