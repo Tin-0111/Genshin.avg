@@ -1,43 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nanum+Gothic&display=swap');
 
 body {
-    background-color: navy; /* 배경 색상 */
+    background-color: navy;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
-    color: white; /* 글자 색상 */
-    margin: 0; /* 기본 마진 제거 */
+    color: white;
+    margin: 0;
 }
 
-.welcome-message {
-    margin-top: 20px;
-    text-align: left; /* 글씨를 왼쪽 정렬 */
-    width: 100%; /* 전체 너비 사용 */
-    padding-left: 20px; /* 왼쪽 여백 추가 */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
 }
 
 .welcome-message h1 {
-    font-size: 4em; /* 글씨 크기 증가 */
-    font-family: 'Nanum Gothic', 'Nunito', sans-serif; /* 예쁜 둥글둥글한 글씨체 */
-    line-height: 1.1; /* 줄 간격 조정 */
-    margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
+    font-size: 2em;
+    font-family: 'Nanum Gothic', 'Nunito', sans-serif;
+    line-height: 1.1;
+    margin: 0.2em 0;
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
 
-.welcome-message h1:nth-child(2) {
-    animation-delay: 2s;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
 .main-buttons {
-    margin-top: 50px; /* 메인 버튼들에 상단 마진 추가 */
+    margin-top: 10px;
 }
 
 .main-button {
@@ -47,16 +42,37 @@ body {
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 5px;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+.content {
+    width: 60%;
+    padding: 20px;
+}
+
+.right-sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #1e1e1e;
 }
 
 .button-container {
     display: flex;
-    flex-wrap: wrap; /* 버튼이 여러 줄로 감싸질 수 있게 함 */
+    flex-wrap: wrap;
     gap: 10px;
-    margin-top: 200px; /* 더 큰 여백 추가 */
-    justify-content: center; /* 버튼들을 가운데 정렬 */
+    justify-content: center;
 }
 
 .photo-button {
@@ -76,37 +92,18 @@ body {
     border: 2px solid red;
 }
 
-.blue-border {
-    border: 2px solid blue;
-}
-
-.light-green-border {
-    border: 2px solid lightgreen;
-}
-
-.purple-border {
-    border: 2px solid purple;
-}
-
-.green-border {
-    border: 2px solid green;
-}
-
-.sky-blue-border {
-    border: 2px solid skyblue;
-}
-
-.light-brown-border {
-    border: 2px solid lightbrown;
-}
-
 .image-display {
     margin-top: 20px;
-    display: none; /* 초기에는 보이지 않음 */
 }
 
 .image-display img {
     width: 500px;
     height: 300px;
     object-fit: cover;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
