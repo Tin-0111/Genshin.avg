@@ -10,7 +10,7 @@
 body {
     background-color: rgba(255, 255, 255, 0.2); /* 배경 투명도 20% */
     background-image: url('Image/bg.jpg'); /* 배경 이미지 추가 */
-    background-size: cover;
+    background-size: 100% 100%; /* 배경 이미지 크기를 화면 크기에 맞춤 */
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -36,11 +36,17 @@ body {
     line-height: 1.1; /* 줄 간격 조정 */
     margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
     color: white; /* 텍스트 색상 흰색으로 변경 */
+    opacity: 0; /* 처음에 보이지 않도록 설정 */
     animation: fadeIn 2s forwards;
     font-weight: bold; /* 글씨 진하게 */
 }
 
-.welcome-message h1:nth-child(2) {
+.welcome-message h1.delay {
+    animation-delay: 2s; /* 첫 번째 h1이 끝난 후에 나타남 */
+}
+
+.highlight {
+    color: yellow; /* GenshinAvg 강조 색상 */
 }
 
 .container {
