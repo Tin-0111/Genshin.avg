@@ -10,7 +10,7 @@
 body {
     background-color: rgba(255, 255, 255, 0.2); /* 배경 투명도 20% */
     background-image: url('Image/bg.jpg'); /* 배경 이미지 추가 */
-    background-size: 100% 100%; /* 배경 이미지 크기를 화면 크기에 맞춤 */
+    background-size: cover; /* 배경 이미지 크기를 화면 크기에 맞춤 */
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -19,7 +19,8 @@ body {
     font-family: Arial, sans-serif;
     color: white; /* 텍스트 색상 흰색으로 변경 */
     margin: 0;
-    opacity: 1; /* 투명도 제거 */
+    height: 100vh; /* 화면 전체 높이 사용 */
+    overflow: hidden; /* 스크롤바 제거 */
 }
 
 .welcome-message {
@@ -42,7 +43,7 @@ body {
 }
 
 .welcome-message h1.delay {
-    animation-delay: 0.5s; /* 첫 번째 h1이 끝난 후에 나타남 */
+    animation-delay: 2s; /* 첫 번째 h1이 끝난 후에 나타남 */
 }
 
 .highlight {
