@@ -38,12 +38,12 @@ body {
     margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
     color: white; /* 텍스트 색상 흰색으로 변경 */
     opacity: 0; /* 처음에 보이지 않도록 설정 */
-    animation: fadeIn 0.5s forwards;
+    animation: fadeIn 1s forwards;
     font-weight: bold; /* 글씨 진하게 */
 }
 
 .welcome-message h1.delay {
-    animation-delay: 0.5s; /* 첫 번째 h1이 끝난 후에 나타남 */
+    animation-delay: 1s; /* 첫 번째 h1이 끝난 후에 나타남 */
 }
 
 .highlight {
