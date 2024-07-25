@@ -36,8 +36,7 @@ body {
     line-height: 1.1; /* 줄 간격 조정 */
     margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
     color: white; /* 텍스트 색상 흰색으로 변경 */
-    opacity: 1; /* 텍스트 투명도 0 */
-    animation: fadeIn 0.5s forwards;
+    animation: fadeIn 2s forwards;
     font-weight: bold; /* 글씨 진하게 */
 }
 
@@ -90,7 +89,10 @@ body {
 }
 
 @keyframes fadeIn {
-    to {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
