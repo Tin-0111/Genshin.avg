@@ -4,11 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nanum+Gothic&display=swap');
 
 body {
-    background-color: #0d1b2a; /* 배경색 변경 */
-    background-image: ('Image/bg.jpg'); /* 배경 이미지 추가 */
+    background-color: white; /* 배경색 변경 */
+    background-image: url('Image/bg.jpg'); /* 배경 이미지 추가 */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,14 +17,13 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
-    color: white;
+    color: black; /* 텍스트 색상 변경 */
     margin: 0;
-    opacity: 0.5; /* 투명도 적용 */
+    opacity: 0.2; /* 투명도 적용 */
 }
 
 .welcome-message {
     margin-top: 20px;
-    font-family: 'MaplestoryOTFBold', sans-serif;
     text-align: left; /* 왼쪽 정렬 */
     width: 100%; /* 전체 너비 사용 */
     padding-left: 20px; /* 왼쪽 여백 추가 */
@@ -31,7 +31,7 @@ body {
 
 .welcome-message h1 {
     font-size: 4em; /* 글씨 크기 증가 */
-    font-family: 'Nanum Gothic', 'Nunito', sans-serif; /* 예쁜 둥글둥글한 글씨체 */
+    font-family: 'MaplestoryOTFBold', sans-serif; /* 지정한 폰트 적용 */
     line-height: 1.1; /* 줄 간격 조정 */
     margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
     opacity: 0;
