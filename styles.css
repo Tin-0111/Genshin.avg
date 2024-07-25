@@ -50,7 +50,7 @@ body {
 }
 
 .welcome-message h1.delay {
-    animation-delay: 2s; /* 첫 번째 h1이 끝난 후에 나타남 */
+    animation-delay: 0.55s; /* 첫 번째 h1이 끝난 후에 나타남 */
 }
 
 .highlight {
@@ -62,9 +62,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 100px; /* 가운데로 내리기 */
+    margin-top: auto; /* 사각형을 화면 가운데로 내리기 */
     width: 100%;
     gap: 30px; /* 사각형 간격 넓히기 */
+    padding-bottom: 20px; /* 하단 패딩 추가 */
 }
 
 .square-section {
@@ -74,7 +75,7 @@ body {
     display: flex;
     flex-direction: column; /* Flex 방향을 세로로 변경 */
     align-items: flex-start; /* 왼쪽 정렬 */
-    justify-content: center;
+    justify-content: flex-start; /* 위쪽 정렬 */
     border-radius: 15px;
     color: white;
     text-align: left; /* 텍스트 왼쪽 정렬 */
@@ -85,13 +86,14 @@ body {
     font-family: 'MaplestoryOTFBold', sans-serif; /* 제목 폰트 적용 */
     font-size: 1.5em; /* 제목 폰트 크기 */
     font-weight: bold; /* 제목 진하게 */
-    margin: 0 0 10px 0; /* 제목과 설명 사이의 마진 */
+    margin: 0; /* 제목과 설명 사이의 마진 제거 */
+    padding-top: 10px; /* 상단 패딩 추가 */
 }
 
 .square-section p {
     font-family: 'Cafe24Ohsquare', sans-serif; /* 내용 폰트 적용 */
     font-size: 1em; /* 설명 폰트 크기 */
-    margin: 0;
+    margin: 10px 0 0 0; /* 내용 상단 마진 */
 }
 
 @keyframes fadeIn {
