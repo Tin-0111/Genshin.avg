@@ -42,7 +42,7 @@ body {
 }
 
 .welcome-message h1.delay {
-    animation-delay: 2s; /* 첫 번째 h1이 끝난 후에 나타남 */
+    animation-delay: 0.5s; /* 첫 번째 h1이 끝난 후에 나타남 */
 }
 
 .highlight {
