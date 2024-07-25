@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nanum+Gothic&display=swap');
 
 body {
-    background-color: white; /* 배경색 변경 */
+    background-color: rgba(255, 255, 255, 0.2); /* 배경 투명도 20% */
     background-image: url('Image/bg.jpg'); /* 배경 이미지 추가 */
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,8 +35,10 @@ body {
     font-family: 'MaplestoryOTFBold', sans-serif; /* 지정한 폰트 적용 */
     line-height: 1.1; /* 줄 간격 조정 */
     margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
-    opacity: 1; /* 투명도 제거 */
+    color: white; /* 텍스트 색상 흰색으로 변경 */
+    opacity: 1; /* 텍스트 투명도 0 */
     animation: fadeIn 0.5s forwards;
+    font-weight: bold; /* 글씨 진하게 */
 }
 
 .welcome-message h1:nth-child(2) {
