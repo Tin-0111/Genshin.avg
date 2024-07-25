@@ -44,23 +44,6 @@ body {
     animation-delay: 0.5s;
 }
 
-.main-buttons {
-    margin-top: 50px; /* 메인 버튼들에 상단 마진 추가 */
-    text-align: center;
-    width: 100%;
-}
-
-.main-button {
-    background-color: white;
-    color: navy;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    border-radius: 5px;
-}
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -76,15 +59,23 @@ body {
     width: 250px; /* 사각형 크기 키우기 */
     height: 250px; /* 사각형 크기 키우기 */
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Flex 방향을 세로로 변경 */
+    align-items: flex-start; /* 왼쪽 정렬 */
     justify-content: center;
     border-radius: 15px;
     color: white;
-    text-align: center;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    padding: 20px; /* 패딩 추가 */
+}
+
+.square-section h2 {
+    font-size: 1.5em; /* 제목 폰트 크기 */
+    font-weight: bold; /* 제목 진하게 */
+    margin: 0 0 10px 0; /* 제목과 설명 사이의 마진 */
 }
 
 .square-section p {
-    font-size: 1.5em;
+    font-size: 1em; /* 설명 폰트 크기 */
     margin: 0;
 }
 
