@@ -36,11 +36,11 @@ body {
     line-height: 1.1; /* 줄 간격 조정 */
     margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
     color: white; /* 텍스트 색상 흰색으로 변경 */
+    animation: fadeIn 2s forwards;
     font-weight: bold; /* 글씨 진하게 */
 }
 
 .welcome-message h1:nth-child(2) {
-    animation-delay: 0.5s;
 }
 
 .container {
