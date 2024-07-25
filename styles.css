@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nanum+Gothic&display=swap');
 
 body {
@@ -38,12 +45,12 @@ body {
     margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
     color: white; /* 텍스트 색상 흰색으로 변경 */
     opacity: 0; /* 처음에 보이지 않도록 설정 */
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 2s forwards;
     font-weight: bold; /* 글씨 진하게 */
 }
 
 .welcome-message h1.delay {
-    animation-delay: 0.7s; /* 첫 번째 h1이 끝난 후에 나타남 */
+    animation-delay: 2s; /* 첫 번째 h1이 끝난 후에 나타남 */
 }
 
 .highlight {
@@ -55,7 +62,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px; /* 가운데로 내리기 */
     width: 100%;
     gap: 30px; /* 사각형 간격 넓히기 */
 }
@@ -75,12 +82,14 @@ body {
 }
 
 .square-section h2 {
+    font-family: 'MaplestoryOTFBold', sans-serif; /* 제목 폰트 적용 */
     font-size: 1.5em; /* 제목 폰트 크기 */
     font-weight: bold; /* 제목 진하게 */
     margin: 0 0 10px 0; /* 제목과 설명 사이의 마진 */
 }
 
 .square-section p {
+    font-family: 'Cafe24Ohsquare', sans-serif; /* 내용 폰트 적용 */
     font-size: 1em; /* 설명 폰트 크기 */
     margin: 0;
 }
