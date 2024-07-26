@@ -77,9 +77,9 @@ body {
     color: white;
     text-align: left;
     padding: 20px;
-    box-sizing: border-box; /* 박스 사이징 설정 */
-    overflow: hidden; /* 내용 넘침 방지 */
-    word-break: keep-all; /* 단어 줄 바꿈 방지 */
+    box-sizing: border-box;
+    overflow: hidden;
+    word-break: keep-all;
 }
 
 .square-section h2 {
@@ -106,8 +106,9 @@ body {
     cursor: pointer;
     font-family: 'Cafe24Ohsquare', sans-serif;
     font-size: 16px;
-    margin-top: 30px; /* 더 아래로 내려가도록 margin-top 값 조정 */
+    margin-top: 30px;
 }
+
 .share-button:hover {
     background-color: #ddd;
 }
@@ -121,7 +122,6 @@ body {
     }
 }
 
-/* 반응형 디자인 */
 @media (max-width: 768px) {
     body {
         overflow: auto;
