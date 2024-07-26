@@ -68,6 +68,19 @@ body {
     margin-top: -40px; /* 상자를 더 위로 올리기 */
 }
 
+.avg-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px); /* 상단과 하단 여백 고려 */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .square-section {
     background-color: #636362;
     width: 300px;
@@ -144,6 +157,13 @@ body {
         height: auto;
         margin-bottom: 20px;
         margin-top: 0; /* 모바일에서 상자 위로 올리기 제거 */
+    }
+
+    .avg-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 15px;
+        padding: 10px;
     }
 
     .square-section {
