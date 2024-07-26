@@ -64,6 +64,7 @@ body {
     gap: 30px;
     margin-top: 20px;
     padding: 0 20px;
+    flex-grow: 1; /* 추가: 컨테이너가 가능한 공간을 차지하도록 설정 */
 }
 
 .square-section {
