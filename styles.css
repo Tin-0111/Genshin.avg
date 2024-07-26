@@ -99,7 +99,7 @@ body {
     margin: 10px 0 0 0;
 }
 
-.share-button {
+.share-button, .back-button {
     display: inline-block;
     background-color: white;
     color: black;
@@ -112,8 +112,14 @@ body {
     margin-top: 30px;
 }
 
-.share-button:hover {
+.share-button:hover, .back-button:hover {
     background-color: #ddd;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 @keyframes fadeIn {
