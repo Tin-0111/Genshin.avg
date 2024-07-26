@@ -106,7 +106,7 @@ body {
     cursor: pointer;
     font-family: 'Cafe24Ohsquare', sans-serif;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 30px; /* 더 아래로 내려가도록 margin-top 값 조정 */
 }
 .share-button:hover {
     background-color: #ddd;
