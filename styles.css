@@ -65,8 +65,9 @@ body {
     margin-top: 20px;
     padding: 0 20px;
     flex-grow: 1;
-    /* 수정된 높이 설정 */
-    height: calc(100vh - 250px); /* 상단 여백을 고려하여 높이 설정 */
+    /* 높이 및 여백 조정 */
+    height: calc(100vh - 40px - 80px); /* body 여백과 동일하게 맞춤 */
+    margin-bottom: 40px; /* 아래쪽 여백을 동일하게 설정 */
 }
 
 .square-section {
