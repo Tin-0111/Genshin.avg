@@ -68,24 +68,6 @@ body {
     margin-top: -40px; /* 상자를 더 위로 올리기 */
 }
 
-.avg-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 10px; /* 상자 간격 매우 좁게 설정 */
-    justify-items: center;
-    align-items: start; /* 상자를 화면 위쪽에 배치 */
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 5vh; /* 화면 상단에서 조금 내림 */
-}
-
-.avg-container > div:nth-child(4) {
-    grid-column: 1 / span 3;
-    justify-self: center;
-}
-
 .square-section {
     background-color: #636362;
     width: 300px;
@@ -117,7 +99,7 @@ body {
     margin: 10px 0 0 0;
 }
 
-.share-button, .back-button {
+.share-button {
     display: inline-block;
     background-color: white;
     color: black;
@@ -130,14 +112,8 @@ body {
     margin-top: 30px;
 }
 
-.share-button:hover, .back-button:hover {
+.share-button:hover {
     background-color: #ddd;
-}
-
-.back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
 }
 
 @keyframes fadeIn {
@@ -164,20 +140,88 @@ body {
         margin-top: 0; /* 모바일에서 상자 위로 올리기 제거 */
     }
 
-    .avg-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, auto);
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .avg-container > div:nth-child(4) {
-        grid-column: span 2;
-    }
-
     .square-section {
         width: 90%;
         height: auto;
         padding: 20px;
     }
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Cafe24Ohsquare', sans-serif;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #ddd;
+}
+
+.avg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 10vh; /* 화면 상단에서 조금 내림 */
+}
+
+.square-section-avg {
+    background-color: #636362;
+    width: 80%; /* 상자 크기 늘리기 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-break: keep-all;
+}
+
+.square-section-avg h2 {
+    font-family: 'MaplestoryOTFBold', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.square-section-avg p {
+    font-family: 'Cafe24Ohsquare', sans-serif;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* 버튼 간격 좁게 */
+    width: 100%;
+}
+
+.img-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.img-button img {
+    width: 50px; /* 버튼 이미지 크기 조절 */
+    height: 50px;
+    object-fit: contain;
 }
