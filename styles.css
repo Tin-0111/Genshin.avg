@@ -106,6 +106,7 @@ body {
     cursor: pointer;
     font-family: 'Cafe24Ohsquare', sans-serif;
     font-size: 16px;
+    margin-top: 20px;
 }
 .share-button:hover {
     background-color: #ddd;
