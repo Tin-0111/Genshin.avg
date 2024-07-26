@@ -178,7 +178,7 @@ body {
 
 .square-section-avg {
     background-color: #636362;
-    width: 95%; /* 가로 길이 더 늘리기 */
+    width: 90vw; /* 가로 길이 대폭 늘리기 */
     height: 40vh; /* 세로 크기 조정 */
     display: flex;
     flex-direction: column;
@@ -222,7 +222,7 @@ body {
 }
 
 .img-button img {
-    width: 50px; /* 버튼 이미지 크기 조절 */
-    height: 50px;
+    width: 100px; /* 버튼 이미지 크기 대폭 조절 */
+    height: 100px;
     object-fit: contain;
 }
