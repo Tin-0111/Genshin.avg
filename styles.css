@@ -14,7 +14,7 @@
 
 body {
     background-color: rgba(255, 255, 255, 0.2);
-    background-image: url('Image/bg.jpg');
+    background-image: url('../Image/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -178,8 +178,8 @@ body {
 
 .square-section-avg {
     background-color: #636362;
-    width: 80%; /* 가로 길게 */
-    height: 60vh; /* 세로 크기 지정 */
+    width: 90%; /* 가로 길게 */
+    height: 40vh; /* 세로 크기 조정 */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,7 +209,6 @@ body {
 
 .button-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 10px; /* 버튼 간격 좁게 */
     width: 100%;
