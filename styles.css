@@ -71,25 +71,25 @@ body {
 .avg-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(3, auto);
     gap: 10px; /* 상자 간격 매우 좁게 설정 */
     justify-items: center;
-    align-items: center; /* 상자를 화면 위쪽에 배치 */
+    align-items: start; /* 상자를 화면 위쪽에 배치 */
     width: 100%;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
-    margin-top: 10vh; /* 화면 상단에서 조금 내림 */
+    margin-top: 5vh; /* 화면 상단에서 조금 내림 */
 }
 
 .avg-container > div:nth-child(4) {
-    grid-column: span 3;
+    grid-column: 1 / span 3;
     justify-self: center;
 }
 
 .square-section {
     background-color: #636362;
-    width: 150px; /* 상자 크기 줄이기 */
-    height: 150px; /* 상자 크기 줄이기 */
+    width: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -97,7 +97,7 @@ body {
     border-radius: 15px;
     color: white;
     text-align: left;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
     word-break: keep-all;
@@ -105,7 +105,7 @@ body {
 
 .square-section h2 {
     font-family: 'MaplestoryOTFBold', sans-serif;
-    font-size: 1em; /* 텍스트 크기 줄이기 */
+    font-size: 1.4em;
     font-weight: bold;
     margin: 0;
     padding-top: 5px;
@@ -113,7 +113,7 @@ body {
 
 .square-section p {
     font-family: 'Cafe24Ohsquare', sans-serif;
-    font-size: 0.9em; /* 텍스트 크기 줄이기 */
+    font-size: 1.1em;
     margin: 10px 0 0 0;
 }
 
