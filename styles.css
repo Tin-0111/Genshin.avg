@@ -14,7 +14,7 @@
 
 body {
     background-color: rgba(255, 255, 255, 0.2);
-    background-image: url('Image/bg.jpg');
+    background-image: url('../Image/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,125 +26,6 @@ body {
     margin: 0;
     min-height: 100vh;
     overflow: hidden; /* PC에서 스크롤바 제거 */
-}
-
-.welcome-message {
-    margin-top: 20px;
-    text-align: left; /* 왼쪽 정렬 */
-    width: 100%;
-    padding-left: 20px;
-    opacity: 1;
-}
-
-.welcome-message h1 {
-    font-size: 4em;
-    font-family: 'MaplestoryOTFBold', sans-serif;
-    line-height: 1.1;
-    margin: 0.2em 0;
-    color: white;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-    font-weight: bold;
-}
-
-.welcome-message h1.delay {
-    animation-delay: 0.7s;
-}
-
-.highlight {
-    color: yellow;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 30px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    flex-grow: 1;
-    margin-top: -40px; /* 상자를 더 위로 올리기 */
-}
-
-.square-section {
-    background-color: #636362;
-    width: 300px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-radius: 15px;
-    color: white;
-    text-align: left;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-    word-break: keep-all;
-}
-
-.square-section h2 {
-    font-family: 'MaplestoryOTFBold', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    margin: 0;
-    padding-top: 5px;
-}
-
-.square-section p {
-    font-family: 'Cafe24Ohsquare', sans-serif;
-    font-size: 1.1em;
-    margin: 10px 0 0 0;
-}
-
-.share-button {
-    display: inline-block;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: 'Cafe24Ohsquare', sans-serif;
-    font-size: 16px;
-    margin-top: 30px;
-}
-
-.share-button:hover {
-    background-color: #ddd;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        overflow: auto; /* 모바일에서는 스크롤바가 나타나도록 */
-    }
-    
-    .welcome-message h1 {
-        font-size: 2em;
-    }
-
-    .container {
-        height: auto;
-        margin-bottom: 20px;
-        margin-top: 0; /* 모바일에서 상자 위로 올리기 제거 */
-    }
-
-    .square-section {
-        width: 90%;
-        height: auto;
-        padding: 20px;
-    }
 }
 
 .back-button {
@@ -168,61 +49,43 @@ body {
 
 .avg-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh; /* 화면 전체 높이 사용 */
     padding: 20px;
     box-sizing: border-box;
+    gap: 20px; /* 상자 간의 간격 추가 */
 }
 
-.square-section-avg {
+.square-section {
     background-color: #636362;
-    width: 90vw !important; /* 가로 길이 대폭 늘리기 */
-    height: 40vh; /* 세로 크기 조정 */
+    width: 150px; /* 상자 크기 조정 */
+    height: 150px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center; /* 내용 중앙 정렬 */
+    justify-content: center;
     border-radius: 15px;
     color: white;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    overflow: hidden;
-    word-break: keep-all;
 }
 
-.square-section-avg h2 {
-    font-family: 'MaplestoryOTFBold', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
-    margin: 0;
-    padding-top: 5px;
-}
-
-.square-section-avg p {
-    font-family: 'Cafe24Ohsquare', sans-serif;
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* 버튼 간격 좁게 */
-    width: 100%;
-}
-
-.img-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-}
-
-.img-button img {
-    width: 100px; /* 버튼 이미지 크기 대폭 조절 */
-    height: 100px;
+.square-section img {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto; /* 모바일에서는 스크롤바가 나타나도록 */
+    }
+
+    .square-section {
+        width: 90%;
+        height: auto;
+    }
 }
