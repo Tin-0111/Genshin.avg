@@ -71,14 +71,19 @@ body {
 .avg-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 30px;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px; /* 상자 간격 매우 좁게 설정 */
     justify-items: center;
-    align-items: center;
+    align-items: start; /* 상자를 화면 위쪽에 배치 */
     width: 100%;
-    height: calc(100vh - 60px); /* 상단과 하단 여백 고려 */
     padding: 20px;
     box-sizing: border-box;
+    margin-top: 5vh; /* 화면 상단에서 조금 내림 */
+}
+
+.avg-container > div:nth-child(4) {
+    grid-column: 1 / span 3;
+    justify-self: center;
 }
 
 .square-section {
@@ -162,8 +167,12 @@ body {
     .avg-container {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, auto);
-        gap: 15px;
+        gap: 10px;
         padding: 10px;
+    }
+
+    .avg-container > div:nth-child(4) {
+        grid-column: span 2;
     }
 
     .square-section {
