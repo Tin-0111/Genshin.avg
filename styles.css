@@ -48,7 +48,7 @@ body {
 }
 
 .welcome-message h1.delay {
-    animation-delay: 2s;
+    animation-delay: 0.7s;
 }
 
 .highlight {
