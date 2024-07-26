@@ -154,12 +154,12 @@ body {
     }
 
     .avg-container {
-        padding-top: 60px; /* 뒤로가기 버튼과의 간격 확보 */
+        padding-top: 80px; /* 뒤로가기 버튼과의 간격 확보 */
     }
 }
 
 .back-button {
-    position: absolute;
+    position: fixed; /* 고정 위치로 변경 */
     top: 20px;
     left: 20px;
     display: inline-block;
@@ -171,6 +171,7 @@ body {
     cursor: pointer;
     font-family: 'Cafe24Ohsquare', sans-serif;
     font-size: 16px;
+    z-index: 1000; /* 다른 요소 위에 표시 */
 }
 
 .back-button:hover {
@@ -187,6 +188,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     gap: 20px; /* 상자 간의 간격 추가 */
+    padding-top: 60px; /* 상단 패딩 추가하여 버튼과 간격 확보 */
 }
 
 .img-button {
