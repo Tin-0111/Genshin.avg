@@ -12,8 +12,6 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nanum+Gothic&display=swap');
-
 body {
     background-color: rgba(255, 255, 255, 0.2);
     background-image: url('Image/bg.jpg');
@@ -32,29 +30,29 @@ body {
 
 .welcome-message {
     margin-top: 20px;
-    text-align: left; /* 왼쪽 정렬 */
-    width: 100%; /* 전체 너비 사용 */
-    padding-left: 20px; /* 왼쪽 여백 추가 */
-    opacity: 1; /* 투명도 제거 */
+    text-align: left;
+    width: 100%;
+    padding-left: 20px;
+    opacity: 1;
 }
 
 .welcome-message h1 {
-    font-size: 4em; /* 글씨 크기 증가 */
-    font-family: 'MaplestoryOTFBold', sans-serif; /* 지정한 폰트 적용 */
-    line-height: 1.1; /* 줄 간격 조정 */
-    margin: 0.2em 0; /* 두 줄 사이 간격 조정 */
-    color: white; /* 텍스트 색상 흰색으로 변경 */
-    opacity: 0; /* 처음에 보이지 않도록 설정 */
+    font-size: 4em;
+    font-family: 'MaplestoryOTFBold', sans-serif;
+    line-height: 1.1;
+    margin: 0.2em 0;
+    color: white;
+    opacity: 0;
     animation: fadeIn 2s forwards;
-    font-weight: bold; /* 글씨 진하게 */
+    font-weight: bold;
 }
 
 .welcome-message h1.delay {
-    animation-delay: 2s; /* 첫 번째 h1이 끝난 후에 나타남 */
+    animation-delay: 2s;
 }
 
 .highlight {
-    color: yellow; /* GenshinAvg 강조 색상 */
+    color: yellow;
 }
 
 .container {
@@ -62,37 +60,40 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 200px); /* 사각형들을 화면 가운데로 내리기 위해 높이 조정 */
-    gap: 30px; /* 사각형 간격 넓히기 */
-    margin-top: 20px; /* 위쪽 여백 추가 */
+    height: 60%;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .square-section {
-    background-color: #636362; /* 변경된 배경색 */
-    width: 220px; /* 사각형 크기 줄이기 */
-    height: 220px; /* 사각형 크기 줄이기 */
+    background-color: #636362;
+    width: 300px;
+    height: 250px;
     display: flex;
-    flex-direction: column; /* Flex 방향을 세로로 변경 */
-    align-items: flex-start; /* 왼쪽 정렬 */
-    justify-content: flex-start; /* 위쪽 정렬 */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     border-radius: 15px;
     color: white;
-    text-align: left; /* 텍스트 왼쪽 정렬 */
-    padding: 15px; /* 패딩 추가 */
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box; /* 박스 사이징 설정 */
+    overflow: hidden; /* 내용 넘침 방지 */
+    word-break: keep-all; /* 단어 줄 바꿈 방지 */
 }
 
 .square-section h2 {
-    font-family: 'MaplestoryOTFBold', sans-serif; /* 제목 폰트 적용 */
-    font-size: 1.2em; /* 제목 폰트 크기 */
-    font-weight: bold; /* 제목 진하게 */
-    margin: 0; /* 제목과 설명 사이의 마진 제거 */
-    padding-top: 5px; /* 상단 패딩 추가 */
+    font-family: 'MaplestoryOTFBold', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 5px;
 }
 
 .square-section p {
-    font-family: 'Cafe24Ohsquare', sans-serif; /* 내용 폰트 적용 */
-    font-size: 0.9em; /* 설명 폰트 크기 */
-    margin: 10px 0 0 0; /* 내용 상단 마진 */
+    font-family: 'Cafe24Ohsquare', sans-serif;
+    font-size: 1.1em;
+    margin: 10px 0 0 0;
 }
 
 @keyframes fadeIn {
@@ -107,21 +108,21 @@ body {
 /* 반응형 디자인 */
 @media (max-width: 768px) {
     body {
-        overflow: auto; /* 모바일에서 스크롤바 활성화 */
+        overflow: auto;
     }
     
     .welcome-message h1 {
-        font-size: 2em; /* 모바일에서 글씨 크기 조정 */
+        font-size: 2em;
     }
 
     .container {
-        height: auto; /* 모바일에서 자동 높이 조정 */
-        margin-bottom: 20px; /* 하단 여백 추가 */
+        height: auto;
+        margin-bottom: 20px;
     }
 
     .square-section {
-        width: 90%; /* 사각형 너비 조정 */
-        height: auto; /* 사각형 높이 조정 */
-        padding: 20px; /* 패딩 추가 */
+        width: 90%;
+        height: auto;
+        padding: 20px;
     }
 }
