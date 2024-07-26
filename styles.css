@@ -64,7 +64,12 @@ body {
     gap: 30px;
     margin-top: 20px;
     padding: 0 20px;
-    flex-grow: 1; /* 추가: 컨테이너가 가능한 공간을 차지하도록 설정 */
+    flex-grow: 1;
+    /* 추가된 스타일 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* 상단 여백을 고려하여 높이 설정 */
 }
 
 .square-section {
