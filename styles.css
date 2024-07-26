@@ -171,17 +171,19 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh; /* 화면 전체 높이 사용 */
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 10vh; /* 화면 상단에서 조금 내림 */
 }
 
 .square-section-avg {
     background-color: #636362;
-    width: 80%; /* 상자 크기 늘리기 */
+    width: 80%; /* 가로 길게 */
+    height: 60vh; /* 세로 크기 지정 */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* 내용 중앙 정렬 */
     border-radius: 15px;
     color: white;
     text-align: center;
