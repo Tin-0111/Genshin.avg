@@ -24,7 +24,7 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -60,7 +60,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 60%;
+    height: auto;
     gap: 30px;
     margin-top: 20px;
 }
