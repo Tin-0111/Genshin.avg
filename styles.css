@@ -129,8 +129,6 @@ body {
 
 @media (max-width: 768px) {
     body {
-        background-size: contain; /* 모바일에서 배경 이미지가 잘리지 않도록 */
-        background-position: top center; /* 모바일에서 배경 이미지 위치 조정 */
         overflow: auto; /* 모바일에서는 세로 스크롤바가 나타나도록 */
     }
     
