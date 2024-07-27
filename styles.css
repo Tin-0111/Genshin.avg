@@ -102,7 +102,7 @@ body {
 }
 
 .share-button {
-    display: inline-block;
+    display: block; /* 블록 요소로 설정 */
     background-color: white;
     color: black;
     padding: 10px 20px;
@@ -111,11 +111,27 @@ body {
     cursor: pointer;
     font-family: 'Cafe24Ohsquare', sans-serif;
     font-size: 16px;
-    margin-top: 30px;
+    margin-top: 10px; /* 버튼과 텍스트 간의 간격을 줄임 */
 }
 
 .share-button:hover {
     background-color: #ddd;
+}
+
+.img-button {
+    display: block; /* 블록 요소로 설정 */
+    background: none; /* 버튼 배경 투명 */
+    border: none; /* 버튼 테두리 없음 */
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 10px; /* 버튼을 아래로 내리기 */
+    margin-left: 0; /* 버튼을 왼쪽으로 이동 */
+}
+
+.img-button img {
+    width: 80px; /* 버튼 이미지 크기 조정 */
+    height: 80px;
+    object-fit: contain;
 }
 
 @keyframes fadeIn {
@@ -190,21 +206,6 @@ body {
     box-sizing: border-box;
     gap: 20px; /* 상자 간의 간격 추가 */
     padding-top: 60px; /* 상단 패딩 추가하여 버튼과 간격 확보 */
-}
-
-.img-button {
-    background: none; /* 버튼 배경 투명 */
-    border: none; /* 버튼 테두리 없음 */
-    cursor: pointer;
-    padding: 5px;
-    margin-top: 20px; /* 버튼을 아래로 내리기 */
-    margin-left: 20px; /* 버튼을 오른쪽으로 이동 */
-}
-
-.img-button img {
-    width: 80px; /* 버튼 이미지 크기 조정 */
-    height: 80px;
-    object-fit: contain;
 }
 
 .avg-container .img-button:nth-child(-n+3) {
