@@ -35,6 +35,7 @@ body {
     width: 100%;
     padding-left: 20px;
     opacity: 1;
+    word-break: keep-all;
 }
 
 .welcome-message h1 {
