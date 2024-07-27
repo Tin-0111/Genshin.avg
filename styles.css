@@ -84,7 +84,6 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     word-break: keep-all;
-    padding-top: 60px;
 }
 
 .square-section h2 {
@@ -149,7 +148,7 @@ body {
 
     .back-button {
         position: fixed;
-        top: 10px;
+        top: 20px;
         left: 20px;
         z-index: 1000; /* 뒤로가기 버튼을 항상 맨 위에 표시 */
     }
