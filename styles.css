@@ -126,6 +126,8 @@ body {
     padding: 5px;
     margin-top: 10px; /* 버튼을 아래로 내리기 */
     margin-left: 0; /* 버튼을 왼쪽으로 이동 */
+    flex: 1 1 100px; /* 각 버튼의 크기 설정 */
+    max-width: 100px; /* 버튼의 최대 너비 설정 */
 }
 
 .img-button img {
