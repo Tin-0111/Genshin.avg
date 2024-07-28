@@ -231,22 +231,43 @@ body {
 }
 
 .image-button-red-yellow {
-    background-color: grey; /* 배경색 회색 */
-    border: 2px solid red; /* 빨간 테두리 */
-    border-radius: 15px; /* 둥근 모서리 */
+    background-color: yellow;
+    border: 2px solid red;
+    border-radius: 15px;
     padding: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px; /* 버튼의 너비 */
-    height: 100px; /* 버튼의 높이 */
+    width: 100px;
+    height: 100px;
     box-sizing: border-box;
-    margin-top: 20px; /* 버튼을 아래로 내리기 */
+    margin-top: 20px;
 }
 
 .image-button-red-yellow img {
-    max-width: 100%; /* 이미지가 버튼 크기를 넘지 않도록 */
+    max-width: 100%;
     max-height: 100%;
-    border-radius: 15px; /* 이미지도 둥근 모서리 */
+    border-radius: 15px;
+}
+
+.image-button-red-purple {
+    background-color: purple;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.image-button-red-purple img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
 }
