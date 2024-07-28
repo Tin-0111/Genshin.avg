@@ -59,8 +59,8 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; /* 요소들이 한 줄을 넘길 수 있도록 설정 */
+    justify-content: center; /* 가로 중앙 정렬 */
     align-items: center;
     width: 100%;
     gap: 30px;
@@ -197,8 +197,8 @@ body {
 
 .avg-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; /* 요소들이 한 줄을 넘길 수 있도록 설정 */
+    justify-content: center; /* 가로 중앙 정렬 */
     align-items: center;
     width: 100%;
     min-height: 100vh; /* 화면 전체 높이 사용 */
