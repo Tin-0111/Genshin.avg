@@ -273,3 +273,36 @@ body {
     max-height: 100%;
     border-radius: 15px;
 }
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* 버튼 사이의 간격 */
+    margin-top: 20px; /* 컨테이너 상단 여백 */
+}
+
+@media (max-width: 1024px) {
+    .button-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        justify-content: center;
+        gap: 10px; /* 모바일에서 버튼 사이의 간격을 줄임 */
+    }
+}
+
+@media (max-width: 480px) {
+    .button-container {
+        justify-content: center;
+        gap: 5px; /* 더 작은 화면에서 버튼 사이의 간격을 더 줄임 */
+    }
+
+    .image-button-red-yellow, .image-button-red-purple {
+        width: 80px;
+        height: 80px;
+    }
+}
