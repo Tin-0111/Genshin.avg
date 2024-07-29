@@ -306,3 +306,50 @@ body {
         height: 80px;
     }
 }
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* 버튼 사이의 간격 */
+    margin-top: 20px; /* 컨테이너 상단 여백 */
+}
+
+.image-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    flex: 1 1 16%; /* Adjusts the width of buttons */
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.image-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .image-button {
+        flex: 1 1 22%; /* 4 buttons per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .image-button {
+        flex: 1 1 30%; /* 3 buttons per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .image-button {
+        flex: 1 1 45%; /* 2 buttons per row */
+    }
+}
+
+@media (max-width: 400px) {
+    .image-button {
+        flex: 1 1 90%; /* 1 button per row */
+    }
+}
