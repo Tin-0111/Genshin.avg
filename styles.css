@@ -280,6 +280,26 @@ body {
     justify-content: center;
     gap: 20px; /* 버튼 사이의 간격 */
     margin-top: 20px; /* 컨테이너 상단 여백 */
+    align-items: center; /* 세로 중앙 정렬 */
+    width: 100%; /* 전체 너비를 차지 */
+}
+
+.image-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 10px;
+    flex: 1 1 100px; /* 각 버튼의 기본 크기 설정 */
+    max-width: 100px; /* 버튼의 최대 너비 설정 */
+    box-sizing: border-box;
+}
+
+.image-button img {
+    width: 100%; /* 버튼 이미지 크기 조정 */
+    height: auto;
+    display: block;
 }
 
 @media (max-width: 1024px) {
