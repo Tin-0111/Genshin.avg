@@ -327,21 +327,22 @@ body {
     }
 }
 
+/* 새로운 CSS 코드 추가 */
 .button-grid {
     display: flex;
     flex-wrap: wrap; /* 한 줄을 넘길 수 있도록 설정 */
     justify-content: center; /* 가로 중앙 정렬 */
-    gap: 20px; /* 버튼 사이의 간격 */
+    gap: 10px; /* 버튼 사이의 간격 */
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .image-button-red-yellow, .image-button-red-purple {
-    flex: 0 0 calc(33.333% - 40px); /* 한 줄에 3개 버튼, 간격 포함 */
-    max-width: 200px; /* 버튼의 최대 너비 설정 */
-    height: 150px; /* 고정 높이 설정 */
-    margin: 10px; /* 버튼의 상하좌우 여백 */
+    flex: 0 0 calc(33.333% - 20px); /* 한 줄에 3개 버튼, 간격 포함 */
+    max-width: 100px; /* 버튼의 최대 너비 설정 */
+    height: 100px; /* 고정 높이 설정 */
+    margin: 5px; /* 버튼의 상하좌우 여백 */
 }
 
 .image-button-red-yellow img, .image-button-red-purple img {
@@ -354,12 +355,12 @@ body {
 /* 모바일 대응 */
 @media (max-width: 768px) {
     .image-button-red-yellow, .image-button-red-purple {
-        flex: 0 0 calc(50% - 40px); /* 한 줄에 2개 버튼, 간격 포함 */
+        flex: 0 0 calc(50% - 20px); /* 한 줄에 2개 버튼, 간격 포함 */
     }
 }
 
 @media (max-width: 480px) {
     .image-button-red-yellow, .image-button-red-purple {
-        flex: 0 0 calc(100% - 40px); /* 한 줄에 1개 버튼, 간격 포함 */
+        flex: 0 0 calc(100% - 20px); /* 한 줄에 1개 버튼, 간격 포함 */
     }
 }
