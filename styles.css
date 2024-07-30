@@ -332,18 +332,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* 버튼들을 세로로 배치 */
     min-height: calc(100vh - 60px); /* 중앙 정렬 유지 */
-    padding-top: 80px; /* 뒤로가기 버튼과의 간격 확보 */
+    padding-top: 100px; /* 뒤로가기 버튼과의 간격 확보 */
 }
 
 .button-grid {
     display: flex;
     flex-wrap: wrap; /* 한 줄을 넘길 수 있도록 설정 */
     justify-content: center; /* 가로 중앙 정렬 */
-    gap: 20px; /* 버튼 사이의 간격 */
-    width: 100%;
+    gap: 10px; /* 버튼 사이의 간격 */
+    width: 100%; /* 버튼이 여러 줄에 걸쳐 중앙에 정렬되도록 설정 */
     max-width: 800px; /* 최대 너비 설정 */
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -367,19 +367,5 @@ body {
         flex: 0 0 calc(33.333% - 10px); /* 한 줄에 3개 버튼, 간격 포함 */
         max-width: 80px; /* 모바일에서 버튼 크기 조정 */
         height: 80px;
-    }
-}
-
-/* PC에서 버튼 4개씩 2줄로 배치 */
-@media (min-width: 769px) {
-    .button-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
-
-    .square-section {
-        width: calc(50% - 20px); /* 두 개의 컬럼에 맞춰 조정 */
-        height: auto;
     }
 }
