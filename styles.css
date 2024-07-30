@@ -340,7 +340,8 @@ body {
     flex-wrap: wrap; /* 한 줄을 넘길 수 있도록 설정 */
     justify-content: center; /* 가로 중앙 정렬 */
     gap: 10px; /* 버튼 사이의 간격 */
-    width: 100%;
+    width: 60%; /* 컨테이너 너비 설정 */
+    max-width: 800px; /* 최대 너비 설정 */
     padding: 20px;
     box-sizing: border-box;
 }
