@@ -336,6 +336,8 @@ body {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    align-items: center; /* 세로 중앙 정렬 */
+    min-height: calc(100vh - 60px); /* 중앙 정렬 유지 */
 }
 
 .image-button-red-yellow, .image-button-red-purple {
