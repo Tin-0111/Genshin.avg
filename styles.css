@@ -369,3 +369,17 @@ body {
         height: 80px;
     }
 }
+
+/* PC에서 버튼 4개씩 2줄로 배치 */
+@media (min-width: 769px) {
+    .button-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .square-section {
+        width: calc(50% - 20px); /* 두 개의 컬럼에 맞춰 조정 */
+        height: auto;
+    }
+}
