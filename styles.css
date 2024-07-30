@@ -332,17 +332,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* 버튼들을 세로로 배치 */
     min-height: calc(100vh - 60px); /* 중앙 정렬 유지 */
+    padding-top: 80px; /* 뒤로가기 버튼과의 간격 확보 */
 }
 
 .button-grid {
     display: flex;
     flex-wrap: wrap; /* 한 줄을 넘길 수 있도록 설정 */
     justify-content: center; /* 가로 중앙 정렬 */
-    gap: 10px; /* 버튼 사이의 간격 */
-    width: 100%; /* 버튼이 여러 줄에 걸쳐 중앙에 정렬되도록 설정 */
+    gap: 20px; /* 버튼 사이의 간격 */
+    width: 100%;
     max-width: 800px; /* 최대 너비 설정 */
-    padding: 20px;
     box-sizing: border-box;
 }
 
