@@ -25,8 +25,7 @@ body {
     color: white;
     margin: 0;
     min-height: 100vh;
-    overflow-x: hidden; /* PC에서 가로 스크롤바 제거 */
-    overflow-y: auto; /* 세로 스크롤바는 필요시 나타나도록 */
+    overflow: hidden; /* 스크롤바 제거 */
 }
 
 .welcome-message {
@@ -147,7 +146,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        overflow: auto; /* 모바일에서는 세로 스크롤바가 나타나도록 */
+        overflow: hidden; /* 스크롤바 제거 */
     }
     
     .welcome-message h1 {
