@@ -337,38 +337,29 @@ body {
 
 .button-grid {
     display: flex;
-    flex-wrap: wrap; /* 한 줄로 나오도록 설정 */
+    flex-wrap: wrap; /* 버튼들이 여러 줄로 나눠질 수 있도록 설정 */
     justify-content: center; /* 가로 중앙 정렬 */
     gap: 20px; /* 버튼 사이의 간격 */
-    width: 100%; /* 버튼이 여러 줄에 걸쳐 중앙에 정렬되도록 설정 */
-    max-width: 100%; /* 최대 너비 설정 */
+    width: 100%; /* 전체 너비를 차지 */
     padding: 20px;
     box-sizing: border-box;
 }
 
-.image-button-red-yellow, .image-button-red-purple {
-    flex: 0 0 300px; /* 한 줄에 300px 버튼 설정 */
-    max-width: 300px; /* 버튼의 최대 너비 설정 */
-    height: 250px; /* 고정 높이 설정 */
-    margin: 5px; /* 버튼의 상하좌우 여백 */
+/* 각 버튼의 크기 조정 */
+.image-button {
+    flex: 1 1 300px; /* 기본 크기 설정 */
+    max-width: 300px; /* 최대 너비 설정 */
 }
 
-.image-button-red-yellow img, .image-button-red-purple img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 비율 유지하며 크기 조정 */
-    border-radius: 15px;
-}
-
-/* 모바일 대응 */
 @media (max-width: 768px) {
-    .image-button-red-yellow, .image-button-red-purple {
-        flex: 0 0 calc(100% - 20px); /* 모바일에서 한 줄에 하나의 버튼 설정 */
-        max-width: 300px; /* 모바일에서 버튼 크기 조정 */
-        height: 250px;
+    .image-button {
+        flex: 1 1 100%; /* 작은 화면에서는 한 줄에 하나의 버튼 */
+        max-width: 100%;
     }
 
     .button-grid {
-        flex-wrap: wrap; /* 모바일에서 버튼들이 여러 줄에 걸쳐 나오도록 설정 */
+        flex-wrap: nowrap; /* 모바일에서는 한 줄로 설정 */
+        overflow-x: auto; /* 가로 스크롤 가능하게 설정 */
+        gap: 10px; /* 버튼 사이의 간격을 줄임 */
     }
 }
