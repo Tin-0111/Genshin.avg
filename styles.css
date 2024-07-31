@@ -337,14 +337,13 @@ body {
 
 .button-grid {
     display: flex;
-    flex-wrap: nowrap; /* 한 줄로 나오도록 설정 */
+    flex-wrap: wrap; /* 한 줄로 나오도록 설정 */
     justify-content: center; /* 가로 중앙 정렬 */
-    gap: 10px; /* 버튼 사이의 간격 */
+    gap: 20px; /* 버튼 사이의 간격 */
     width: 100%; /* 버튼이 여러 줄에 걸쳐 중앙에 정렬되도록 설정 */
     max-width: 100%; /* 최대 너비 설정 */
     padding: 20px;
     box-sizing: border-box;
-    overflow-x: auto; /* 가로 스크롤 가능 */
 }
 
 .image-button-red-yellow, .image-button-red-purple {
