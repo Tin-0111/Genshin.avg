@@ -369,3 +369,17 @@ body {
         gap: 10px; /* 버튼 사이의 간격을 줄임 */
     }
 }
+
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* 버튼 사이의 간격을 조정하세요 */
+}
+
+.button-container .character-button {
+    flex: 1 1 calc(16.66% - 20px); /* 6개씩 배치하고 여백을 고려한 크기 */
+    max-width: calc(16.66% - 20px); /* 6개씩 배치하고 여백을 고려한 크기 */
+    box-sizing: border-box;
+}
