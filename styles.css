@@ -399,6 +399,7 @@ body {
     text-align: center; /* 텍스트 중앙 정렬 */
     box-sizing: border-box; /* 패딩과 테두리를 포함한 박스 크기 설정 */
     padding: 20px; /* 박스 내부 여백 */
+    position: relative; /* 이미지 위치 설정을 위한 기준 */
 }
 
 .title {
@@ -407,7 +408,9 @@ body {
 }
 
 .large-image {
-    width: 100%; /* 이미지 너비 100% */
-    height: auto; /* 이미지 비율 유지 */
-    border-radius: 10px; /* 이미지 모서리 둥글게 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%; /* 이미지 높이를 박스 높이에 맞춤 */
 }
