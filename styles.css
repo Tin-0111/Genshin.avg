@@ -400,17 +400,19 @@ body {
     box-sizing: border-box; /* 패딩과 테두리를 포함한 박스 크기 설정 */
     padding: 20px; /* 박스 내부 여백 */
     position: relative; /* 이미지 위치 설정을 위한 기준 */
+    overflow: hidden; /* 박스 밖으로 나가는 내용 숨김 */
 }
 
 .title {
     align-self: flex-start; /* 제목을 왼쪽 정렬 */
     margin-bottom: 20px; /* 제목과 이미지 사이 여백 */
+    font-size: 2em; /* 제목 글자 크기 키우기 */
 }
 
 .large-image {
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
     height: 100%; /* 이미지 높이를 박스 높이에 맞춤 */
+    width: auto;
 }
