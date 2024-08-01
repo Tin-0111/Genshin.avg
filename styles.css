@@ -401,13 +401,18 @@ body {
     padding: 20px; /* 박스 내부 여백 */
     position: relative; /* 이미지 위치 설정을 위한 기준 */
     overflow: hidden; /* 박스 밖으로 나가는 내용 숨김 */
+    margin-top: 100px; /* 버튼과의 간격 */
 }
 
 .button-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     margin-bottom: 20px;
+    position: fixed; /* 버튼을 고정 위치에 배치 */
+    top: 20px; /* 화면 상단에서 20px 아래에 위치 */
+    left: 50%; /* 화면의 가운데 정렬 */
+    transform: translateX(-50%); /* 수평 중앙 정렬 */
 }
 
 .color-button {
@@ -415,7 +420,8 @@ body {
     border: 2px solid white;
     border-radius: 10px;
     color: black;
-    padding: 10px 20px;
+    padding: 15px 30px; /* 버튼 크기 증가 */
+    margin: 0 5px; /* 버튼 사이 간격 */
     cursor: pointer;
     transition: background-color 0.3s;
 }
