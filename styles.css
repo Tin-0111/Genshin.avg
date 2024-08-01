@@ -383,3 +383,20 @@ body {
     max-width: calc(16.66% - 20px); /* 6개씩 배치하고 여백을 고려한 크기 */
     box-sizing: border-box;
 }
+
+/* 다른 스타일들... */
+
+.center-box {
+    background-color: #636362; /* 회색 배경색 */
+    width: 80%; /* 박스 너비 */
+    height: 400px; /* 박스 높이 */
+    margin: auto; /* 가로 중앙 정렬 */
+    display: flex;
+    justify-content: center; /* 내용 가로 중앙 정렬 */
+    align-items: center; /* 내용 세로 중앙 정렬 */
+    border-radius: 15px; /* 모서리 둥글게 */
+    color: white; /* 글자 색상 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 박스 크기 설정 */
+    padding: 20px; /* 박스 내부 여백 */
+}
