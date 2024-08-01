@@ -406,7 +406,7 @@ body {
 .title {
     align-self: flex-start; /* 제목을 왼쪽 정렬 */
     margin-bottom: 20px; /* 제목과 이미지 사이 여백 */
-    font-size: 2em; /* 제목 글자 크기 키우기 */
+    font-size: 4em; /* 제목 글자 크기 키우기 */
 }
 
 .large-image {
