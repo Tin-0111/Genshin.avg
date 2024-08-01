@@ -403,6 +403,32 @@ body {
     overflow: hidden; /* 박스 밖으로 나가는 내용 숨김 */
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.color-button {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.color-button.active {
+    background-color: red;
+    color: white;
+}
+
+.color-button:not(.active):hover {
+    background-color: lightgray;
+}
+
 .title {
     align-self: flex-start; /* 제목을 왼쪽 정렬 */
     margin-bottom: 20px; /* 제목과 이미지 사이 여백 */
