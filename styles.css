@@ -403,7 +403,7 @@ body {
     overflow: hidden; /* 박스 밖으로 나가는 내용 숨김 */
     margin-top: 100px; /* 버튼과의 간격 */
     margin-bottom: 20px; /* 화면 바닥과의 간격 */
-    max-height: 80vh; /* 최대 높이 설정 */
+    max-height: 70vh; /* 최대 높이 설정 */
 }
 
 .button-container {
@@ -458,6 +458,7 @@ body {
     flex-wrap: wrap;
     width: 50%; /* 박스의 왼쪽에 위치하게 하기 위해 너비를 50%로 설정 */
     margin-left: 20px; /* 이미지와의 간격 */
+    align-content: flex-start; /* 위쪽으로 정렬 */
 }
 
 .content-item {
@@ -468,6 +469,7 @@ body {
     margin: 5px; /* 아이템 간의 간격 설정 */
     text-align: center; /* 텍스트 중앙 정렬 */
     box-sizing: border-box; /* 박스 크기 조절을 위한 설정 */
+    flex-basis: 45%; /* 아이템 너비 설정 */
 }
 
 .small-image {
