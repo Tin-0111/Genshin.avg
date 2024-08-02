@@ -402,6 +402,7 @@ body {
     position: relative; /* 이미지 위치 설정을 위한 기준 */
     overflow: hidden; /* 박스 밖으로 나가는 내용 숨김 */
     margin-top: 100px; /* 버튼과의 간격 */
+    margin-bottom: 20px; /* 화면 바닥과의 간격 */
 }
 
 .button-container {
@@ -465,9 +466,11 @@ body {
     width: calc(50% - 10px); /* 두 아이템이 한 줄에 들어가도록 너비 설정 */
     margin-bottom: 20px; /* 아이템 간의 간격 설정 */
     text-align: center; /* 텍스트 중앙 정렬 */
+    box-sizing: border-box; /* 박스 크기 조절을 위한 설정 */
 }
 
 .small-image {
-    max-width: 100%;
+    width: 100%; /* 작은 이미지의 너비를 100%로 설정 */
+    height: auto; /* 이미지 높이 자동 설정 */
     border-radius: 5px; /* 이미지 모서리 둥글게 */
 }
