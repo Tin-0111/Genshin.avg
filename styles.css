@@ -476,3 +476,7 @@ body {
     height: auto; /* 이미지 높이 자동 설정 */
     border-radius: 5px; /* 이미지 모서리 둥글게 */
 }
+
+.hidden {
+    display: none; /* 숨겨진 상태를 위한 클래스 */
+}
