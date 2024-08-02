@@ -444,18 +444,17 @@ body {
 .large-image {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%; /* 박스 왼쪽 끝에 맞추기 */
     height: 100%; /* 이미지 높이를 박스 높이에 맞춤 */
     width: auto;
+    transform: translateX(-50%);
 }
 
 .content-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* 아이템 사이에 여백 추가 */
-    gap: 20px; /* 아이템 간의 간격 설정 */
-    width: 100%;
-    margin-top: 20px; /* 이미지와의 간격 */
+    width: 50%; /* 박스의 왼쪽에 위치하게 하기 위해 너비를 줄임 */
+    margin-right: 20px; /* 이미지와의 간격 */
 }
 
 .content-item {
@@ -463,6 +462,7 @@ body {
     border-radius: 10px; /* 모서리를 둥글게 */
     padding: 10px;
     width: calc(50% - 10px); /* 두 아이템이 한 줄에 들어가도록 너비 설정 */
+    margin-bottom: 20px; /* 아이템 간의 간격 설정 */
     text-align: center; /* 텍스트 중앙 정렬 */
 }
 
