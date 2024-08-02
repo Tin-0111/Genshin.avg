@@ -403,6 +403,7 @@ body {
     overflow: hidden; /* 박스 밖으로 나가는 내용 숨김 */
     margin-top: 100px; /* 버튼과의 간격 */
     margin-bottom: 20px; /* 화면 바닥과의 간격 */
+    max-height: 80vh; /* 최대 높이 설정 */
 }
 
 .button-container {
@@ -464,7 +465,7 @@ body {
     border-radius: 10px; /* 모서리를 둥글게 */
     padding: 10px;
     width: calc(50% - 10px); /* 두 아이템이 한 줄에 들어가도록 너비 설정 */
-    margin-bottom: 20px; /* 아이템 간의 간격 설정 */
+    margin: 5px; /* 아이템 간의 간격 설정 */
     text-align: center; /* 텍스트 중앙 정렬 */
     box-sizing: border-box; /* 박스 크기 조절을 위한 설정 */
 }
