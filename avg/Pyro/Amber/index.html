@@ -1,51 +1,56 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genshin.Avg - Amber</title>
-    <link rel="stylesheet" href="../../../styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Nanum+Gothic&display=swap">
+    <title>Amber</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button class="back-button" onclick="window.location.href='https://genshinavg.com/avg/'">🔙 뒤로가기</button>
+    <button class="back-button" onclick="history.back()">🔙 뒤로가기</button>
     <div class="button-container">
-        <button class="color-button active" onclick="changeButtonColor(this)">Button 1</button>
-        <button class="color-button" onclick="changeButtonColor(this)">Button 2</button>
-        <button class="color-button" onclick="changeButtonColor(this)">Button 3</button>
+        <button class="color-button active" id="button1" onclick="toggleContent(1)">Button 1</button>
+        <button class="color-button" id="button2" onclick="toggleContent(2)">Button 2</button>
+        <button class="color-button" id="button3" onclick="toggleContent(3)">Button 3</button>
     </div>
     <div class="center-box">
         <h1 class="title">Amber</h1>
         <div class="image-text-grid">
             <img src="../../../Image/character/Pyro/Amber_bg.jpg" alt="Amber" class="large-image">
-            <div class="content-grid">
+            <div class="content-grid" id="content">
                 <div class="content-item">
-                    <img src="/mnt/data/image1.png" alt="Description 1" class="small-image">
+                    <img src="../../../Image/character/Pyro/Amber_1.jpg" alt="Description 1" class="small-image">
+                    <p>Description 1</p>
                     <p>Some text about the first image</p>
                 </div>
                 <div class="content-item">
-                    <img src="/mnt/data/image2.png" alt="Description 2" class="small-image">
+                    <img src="../../../Image/character/Pyro/Amber_2.jpg" alt="Description 2" class="small-image">
+                    <p>Description 2</p>
                     <p>Some text about the second image</p>
                 </div>
                 <div class="content-item">
-                    <img src="/mnt/data/image3.png" alt="Description 3" class="small-image">
+                    <img src="../../../Image/character/Pyro/Amber_3.jpg" alt="Description 3" class="small-image">
+                    <p>Description 3</p>
                     <p>Some text about the third image</p>
                 </div>
                 <div class="content-item">
-                    <img src="/mnt/data/image4.png" alt="Description 4" class="small-image">
+                    <img src="../../../Image/character/Pyro/Amber_4.jpg" alt="Description 4" class="small-image">
+                    <p>Description 4</p>
                     <p>Some text about the fourth image</p>
                 </div>
                 <div class="content-item">
-                    <img src="/mnt/data/image5.png" alt="Description 5" class="small-image">
+                    <img src="../../../Image/character/Pyro/Amber_5.jpg" alt="Description 5" class="small-image">
+                    <p>Description 5</p>
                     <p>Some text about the fifth image</p>
                 </div>
                 <div class="content-item">
-                    <img src="/mnt/data/image6.png" alt="Description 6" class="small-image">
+                    <img src="../../../Image/character/Pyro/Amber_6.jpg" alt="Description 6" class="small-image">
+                    <p>Description 6</p>
                     <p>Some text about the sixth image</p>
                 </div>
             </div>
         </div>
     </div>
-    <script src="amber.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
