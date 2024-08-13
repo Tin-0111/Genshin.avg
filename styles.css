@@ -592,3 +592,13 @@ body {
 .hidden {
     display: none; /* 숨겨진 상태를 위한 클래스 */
 }
+
+
+.content-section {
+    display: none; /* 처음에 모두 숨김 */
+}
+
+.color-button.active {
+    background-color: red; /* 클릭된 버튼의 배경색 */
+    color: white;
+}
