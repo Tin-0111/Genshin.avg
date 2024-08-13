@@ -1,22 +1,21 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll(".color-button");
-    const content = document.getElementById("content");
+// 버튼과 관련된 모든 요소들을 선택
+const buttons = document.querySelectorAll('.color-button');
+const contentSections = document.querySelectorAll('.content-section');
 
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            buttons.forEach(btn => btn.classList.remove("active"));
-            this.classList.add("active");
-
-            const buttonNumber = this.id.replace("button", "");
-
-            if (buttonNumber === "1") {
-                content.classList.remove("hidden");
-            } else {
-                content.classList.add("hidden");
-            }
-        });
+// 버튼 클릭 시 발생하는 이벤트 처리
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        // 모든 버튼의 active 클래스 제거
+        buttons.forEach(btn => btn.classList.remove('active'));
+        
+        // 클릭된 버튼에 active 클래스 추가
+        this.classList.add('active');
+        
+        // 모든 콘텐츠 섹션 숨기기
+        contentSections.forEach(section => section.style.display = 'none');
+        
+        // 클릭된 버튼에 연결된 콘텐츠 섹션 표시
+        const target = this.getAttribute('data-target');
+        document.getElementById(target).style.display = 'block';
     });
-
-    // 초기 상태에서는 content를 숨깁니다.
-    content.classList.add("hidden");
 });
