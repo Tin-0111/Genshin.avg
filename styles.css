@@ -14,7 +14,7 @@
 
 body {
     background-color: rgba(255, 255, 255, 0.2);
-    background-image: url('Image/bg.jpg');
+    background-image: url('Image/etc/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /* 배경이 스크롤 시 고정되도록 설정 */
